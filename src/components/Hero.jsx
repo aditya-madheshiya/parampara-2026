@@ -30,7 +30,7 @@ const Hero = () => {
         {/* Center Content Section - Clipping & Mobile Touch Fix */}
         <div className="flex-1 text-center order-1 md:order-2 px-4 max-w-full lg:min-w-[650px]">
           <h2 className="text-fest-gold text-xs sm:text-sm md:text-lg tracking-[0.4em] font-bold uppercase mb-2 drop-shadow-lg">
-            Cultural Technical Sports Fest
+            Cultural | Technical | Sports Fest
           </h2>
           
           <div className="flex flex-col items-center">
