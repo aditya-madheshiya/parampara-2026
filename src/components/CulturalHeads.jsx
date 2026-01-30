@@ -75,7 +75,7 @@ const CulturalHeads = () => {
               href={`https://wa.me/${head.whatsapp}?text=Hi ${head.name}, I have a query about cultural events.`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center bg-[#25D366] text-white w-full py-3 rounded-xl font-black uppercase text-[10px] tracking-widest transition-all duration-300 shadow-lg hover:bg-[#1ebea5] active:scale-95"
+              className="flex items-center justify-center bg-[#25D366] text-white w-full py-3.5 md:py-4 rounded-xl md:rounded-2xl font-black uppercase text-xs md:text-sm tracking-widest transition-all duration-300 shadow-lg hover:bg-[#1ebea5] active:scale-95"
             >
               Contact on WhatsApp
             </a>

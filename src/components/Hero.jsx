@@ -49,9 +49,9 @@ const Hero = () => {
           <div className="mt-8 mb-6 inline-block max-w-[95%] sm:max-w-full mx-auto">
             <div className="bg-black/60 backdrop-blur-md border-x-2 border-fest-gold px-6 sm:px-10 py-3 rounded-lg shadow-2xl">
               <p className="text-white text-lg sm:text-xl md:text-3xl font-bold tracking-[0.1em] sm:tracking-[0.2em] flex items-center justify-center gap-2 sm:gap-3 whitespace-nowrap">
-                <span className="text-fest-gold">12</span> • 
-                <span className="text-fest-gold">13</span> • 
-                <span className="text-fest-gold">14</span> MARCH 2026
+                <span className="text-fest-gold">coming</span> • 
+                <span className="text-fest-gold">soon.</span> • 
+                <span className="text-fest-gold">stay</span> tuned
               </p>
             </div>
           </div>

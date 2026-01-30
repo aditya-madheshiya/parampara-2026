@@ -1,32 +1,15 @@
 import React from 'react';
-// Photos import karein (Path sahi kar lena apne assets ke hisab se)
 import anuragImg from '../assets/techhead/anurag.jpeg'; 
 import anshitImg from '../assets/techhead/anshit.jpeg'; 
 import adityaImg from '../assets/techhead/aditya.jpeg'; 
+import anshikaImg from '../assets/techhead/anshika.jpeg'; 
 
 const TechnicalHeads = () => {
   const heads = [
-    {
-      id: 1,
-      name: "Anurag Gupta",
-      role: "Technical Head",
-      img: anuragImg,
-      whatsapp: "919336139565" // Apna number dalein
-    },
-    {
-      id: 2,
-      name: "Anshit Kumar Srivastav",
-      role: "Technical Head",
-      img: anshitImg,
-      whatsapp: "918545999173" // Apna number dalein
-    },
-    {
-      id: 3,
-      name: "Aditya Madheshiya",
-      role: "Technical Head",
-      img: adityaImg,
-      whatsapp: "919792415039" // Apna number dalein
-    }
+    { id: 1, name: "Anurag Gupta", role: "Technical Head", img: anuragImg, whatsapp: "919336139565" },
+    { id: 2, name: "Anshit Kumar Srivastav", role: "Technical Head", img: anshitImg, whatsapp: "918545999173" },
+    { id: 3, name: "Aditya Madheshiya", role: "Technical Head", img: adityaImg, whatsapp: "919792415039" },
+    { id: 4, name: "Anshika", role: "Technical Head", img: anshikaImg, whatsapp: "918303314290" }
   ];
 
   return (
@@ -35,15 +18,15 @@ const TechnicalHeads = () => {
         Technical <span className="text-fest-gold">Heads</span>
       </h2>
 
-      {/* Grid Layout: Mobile pe 1, Desktop pe 3 */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
+      {/* FIXED GRID: Desktop pe 4 columns, Mobile pe 1 */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-[1400px]">
         {heads.map((head) => (
           <div 
             key={head.id}
-            className="bg-white/5 backdrop-blur-xl border border-white/10 p-6 rounded-[2.5rem] shadow-2xl hover:border-fest-gold/30 transition-all duration-500 group text-center relative overflow-hidden"
+            className="bg-white/5 backdrop-blur-xl border border-white/10 p-5 rounded-[2.5rem] shadow-2xl hover:border-fest-gold/30 transition-all duration-500 group text-center relative overflow-hidden"
           >
-            {/* Profile Picture - Haircut Fix (object-top) */}
-            <div className="relative mx-auto w-40 h-40 sm:w-48 sm:h-48 mb-6 p-1 border-2 border-fest-gold/20 rounded-[2rem] group-hover:border-fest-gold/50 transition-all duration-500">
+            {/* Profile Picture */}
+            <div className="relative mx-auto w-36 h-36 sm:w-44 sm:h-44 mb-6 p-1 border-2 border-fest-gold/20 rounded-[2rem] group-hover:border-fest-gold/50 transition-all duration-500">
               <img 
                 src={head.img} 
                 alt={head.name} 
@@ -54,10 +37,10 @@ const TechnicalHeads = () => {
 
             {/* Info */}
             <div className="mb-6">
-              <h3 className="text-lg md:text-xl font-black text-white uppercase tracking-tighter leading-tight h-12 flex items-center justify-center">
+              <h3 className="text-base md:text-lg font-black text-white uppercase tracking-tighter leading-tight h-10 flex items-center justify-center">
                 {head.name}
               </h3>
-              <p className="text-fest-gold font-bold uppercase text-[10px] tracking-[0.2em] mt-2 opacity-90">
+              <p className="text-fest-gold font-bold uppercase text-[9px] tracking-[0.2em] mt-2 opacity-90">
                 {head.role}
               </p>
             </div>
@@ -67,7 +50,7 @@ const TechnicalHeads = () => {
               href={`https://wa.me/${head.whatsapp}?text=Hi ${head.name}, I have a query about technical events.`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center bg-[#25D366] text-white w-full py-3 rounded-xl font-black uppercase text-[10px] md:text-xs tracking-widest transition-all duration-300 shadow-lg hover:bg-[#1ebea5] active:scale-95"
+              className="flex items-center justify-center bg-[#25D366] text-white w-full py-3.5 md:py-4 rounded-xl md:rounded-2xl font-black uppercase text-xs md:text-sm tracking-widest transition-all duration-300 shadow-lg hover:bg-[#1ebea5] active:scale-95"
             >
               Contact on WhatsApp
             </a>

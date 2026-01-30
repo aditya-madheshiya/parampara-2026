@@ -34,7 +34,7 @@ const DisciplineHead = () => {
         {/* Info Section */}
         <div className="space-y-1 md:space-y-2 mb-6 md:mb-8">
           <h3 className="text-xl md:text-3xl font-black text-white uppercase tracking-tighter leading-tight">
-            Rijwan Khan
+            Rizwan Khan
           </h3>
           <p className="text-fest-gold font-bold uppercase text-[10px] md:text-xs tracking-[0.2em] opacity-90">
             Discipline Committee Head
