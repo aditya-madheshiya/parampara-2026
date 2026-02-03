@@ -3,28 +3,28 @@ import { Link } from 'react-router-dom';
 
 // --- IMAGES IMPORT SECTION ---
 // Note: Apne folder 'src/assets/techeventpic/' mein in naamon se images rakhein
-import bugHunterImg from '../assets/techeventpic/bughunter.png';
-import codeTitanImg from '../assets/techeventpic/codetitan.png';
-import miniHackImg from '../assets/techeventpic/minihackathon.png';
-import logicWarImg from '../assets/techeventpic/logicwar.png';
-import nfsImg from '../assets/techeventpic/nfs.png';
-import roboWarImg from '../assets/techeventpic/robowar.png';
-import bridgeKritiImg from '../assets/techeventpic/bridgekriti.png';
-import vicharYuddhImg from '../assets/techeventpic/vicharyuddh.png';
-import junkyardImg from '../assets/techeventpic/junkyard.png';
-import rubiksWarImg from '../assets/techeventpic/rubikswar.png';
-import sharkTankImg from '../assets/techeventpic/sharktank.png';
-import kalpanaImg from '../assets/techeventpic/kalpanacanvas.png';
-import bgmiImg from '../assets/techeventpic/bgmi.png';
-import riddleImg from '../assets/techeventpic/riddlemaster.png';
-import prescriptionImg from '../assets/techeventpic/prescription.png';
-import lensMasterImg from '../assets/techeventpic/lensmaster.png';
-import circuitImg from '../assets/techeventpic/circuitdesign.png';
-import scienceSrImg from '../assets/techeventpic/sciencesr.png';
-import scienceJrImg from '../assets/techeventpic/sciencejr.png';
-import blindTypingImg from '../assets/techeventpic/blindtyping.png';
-import freeFireImg from '../assets/techeventpic/freefire.png';
-import fictionImg from '../assets/techeventpic/fictionwriting.png';
+import bugHunterImg from '../assets/techeventpic/bughunter.jpeg';
+import codeTitanImg from '../assets/techeventpic/codetitan.jpeg';
+import miniHackImg from '../assets/techeventpic/minihackathon.jpeg';
+import logicWarImg from '../assets/techeventpic/logicwar.jpeg';
+import nfsImg from '../assets/techeventpic/nfs.jpeg';
+import roboWarImg from '../assets/techeventpic/robowar.jpeg';
+import bridgeKritiImg from '../assets/techeventpic/bridgekriti.jpeg';
+import vicharYuddhImg from '../assets/techeventpic/vicharyuddh.jpeg';
+import junkyardImg from '../assets/techeventpic/junkyard.jpeg';
+import rubiksWarImg from '../assets/techeventpic/rubikswar.jpeg';
+import sharkTankImg from '../assets/techeventpic/sharktank.jpeg';
+import kalpanaImg from '../assets/techeventpic/kalpanacanvas.jpeg';
+import bgmiImg from '../assets/techeventpic/bgmi.jpeg';
+import riddleImg from '../assets/techeventpic/riddlemaster.jpeg';
+import prescriptionImg from '../assets/techeventpic/prescription.jpeg';
+import lensMasterImg from '../assets/techeventpic/lensmaster.jpeg';
+import circuitImg from '../assets/techeventpic/circuitdesign.jpeg';
+import scienceSrImg from '../assets/techeventpic/sciencesr.jpeg';
+import scienceJrImg from '../assets/techeventpic/sciencejr.jpeg';
+import blindTypingImg from '../assets/techeventpic/blindtyping.jpeg';
+import freeFireImg from '../assets/techeventpic/freefire.jpeg';
+import fictionImg from '../assets/techeventpic/fictionwriting.jpeg';
 
 // Fallback Image (Agar koi image miss ho jaye to ye dikhegi)
 // import defaultImg from '../assets/techeventpic/default.jpg'; 
