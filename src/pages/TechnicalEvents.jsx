@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PageTransition from '../components/PageTransition';
 
 // --- IMAGES IMPORT SECTION ---
 // Note: Apne folder 'src/assets/techeventpic/' mein in naamon se images rakhein
@@ -58,6 +59,7 @@ const TechnicalEvents = () => {
   ];
 
   return (
+    <PageTransition>
     <div className="min-h-screen pt-32 pb-20 px-6 bg-black">
       <div className="max-w-7xl mx-auto">
         
@@ -124,6 +126,7 @@ const TechnicalEvents = () => {
         </div>
       </div>
     </div>
+    </PageTransition>
   );
 };
 

@@ -2,77 +2,76 @@ import React from 'react';
 // Assets Import
 import logo2 from '../assets/logo2.png';
 import itm from '../assets/itm.png';
+import paramparaPng from '../assets/parampara_text.png'; 
+import PageTransition from '../components/PageTransition';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen w-full flex items-center justify-center px-4 py-20 overflow-hidden bg-transparent">
+     <PageTransition>
+    // 'min-h-screen' ke saath 'flex-col' use kiya hai taaki spacing auto-adjust ho
+    <section className="relative min-h-screen w-full flex flex-col items-center overflow-hidden bg-transparent">
       
-      {/* Background Decor - Ambient Glow */}
+      {/* Background Decor */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-1/4 left-[-5%] w-72 h-72 bg-fest-gold/10 blur-[120px] rounded-full"></div>
-        <div className="absolute bottom-1/4 right-[-5%] w-72 h-72 bg-fest-gold/10 blur-[120px] rounded-full"></div>
+        <div className="absolute top-1/4 left-[-10%] w-80 h-80 bg-fest-gold/15 blur-[120px] rounded-full animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-[-10%] w-80 h-80 bg-fest-gold/10 blur-[120px] rounded-full"></div>
       </div>
 
-      <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 md:gap-12 z-10">
+      {/* --- MAIN CONTENT WRAPPER --- */}
+      {/* pt-24 (mobile) aur md:pt-32 (desktop) Navbar ke liye space banayega */}
+      <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 md:gap-12 z-10 pt-28 md:pt-40 px-4 pb-10 my-auto">
         
-        {/* Left Logo (ITM) - Circular Glassmorphism */}
-        <div className="flex-shrink-0 animate-float order-2 md:order-1">
-          <div className="w-36 h-36 sm:w-44 sm:h-44 md:w-52 md:h-52 rounded-full p-1 bg-white/10 backdrop-blur-md border border-fest-gold/30 shadow-[0_0_30px_rgba(255,204,0,0.2)] flex items-center justify-center">
-            <img 
-              src={itm} 
-              className="w-[85%] h-[85%] object-contain rounded-full" 
-              alt="ITM Logo" 
-              onError={(e) => { e.target.src = 'https://via.placeholder.com/150/ffcc00/000000?text=ITM' }} 
-            />
+        {/* Left Logo (ITM) */}
+        <div className="flex-shrink-0 animate-float order-2 md:order-1" data-aos="fade-right">
+          <div className="w-24 h-24 sm:w-36 sm:h-36 md:w-52 md:h-52 rounded-full p-1 bg-white/5 backdrop-blur-md border border-white/10 shadow-2xl flex items-center justify-center">
+            <img src={itm} className="w-[80%] h-[80%] object-contain" alt="ITM Logo" />
           </div>
         </div>
 
-        {/* Center Content Section - Clipping & Mobile Touch Fix */}
-        <div className="flex-1 text-center order-1 md:order-2 px-4 max-w-full lg:min-w-[650px]">
-          <h2 className="text-fest-gold text-xs sm:text-sm md:text-lg tracking-[0.4em] font-bold uppercase mb-2 drop-shadow-lg">
-            Cultural | Technical | Sports 
+        {/* Center Content Section */}
+        <div className="flex-[2] text-center order-1 md:order-2 w-full flex flex-col items-center justify-center" data-aos="zoom-in">
+          
+          {/* Header Text - Added more margin bottom */}
+          <h2 className="text-fest-gold text-[10px] sm:text-xs md:text-lg tracking-[0.4em] font-black uppercase mb-6 drop-shadow-md italic">
+            Technical | Cultural | Sports 
           </h2>
           
-          <div className="flex flex-col items-center">
-            {/* Desktop Clipping Fix: Adjusted size to 115px and tracking to normal */}
-            <h1 className="text-5xl sm:text-7xl lg:text-[115px] font-black text-white leading-tight uppercase tracking-normal drop-shadow-2xl">
-              PARAM<span className="text-fest-gold">PARA</span>
-            </h1>
-            
-            {/* Bold & Colorful 2026 */}
-            <span className="text-5xl sm:text-7xl lg:text-8xl font-black tracking-widest bg-linear-to-r from-fest-gold via-white to-fest-gold bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(255,204,0,0.5)] -mt-2">
-              2026
-            </span>
+          {/* PARAMPARA PNG - Controlled Size */}
+          <div className="w-full max-w-[280px] xs:max-w-[340px] sm:max-w-[500px] md:max-w-[700px] lg:max-w-[850px] xl:max-w-[950px] transition-all">
+            <img 
+              src={paramparaPng} 
+              alt="PARAMPARA" 
+              className="w-full h-auto drop-shadow-[0_0_20px_rgba(255,204,0,0.25)] object-contain"
+            />
           </div>
 
-          {/* Event Date Badge - Fixed Screen Touching Issue */}
-          <div className="mt-8 mb-6 inline-block max-w-[95%] sm:max-w-full mx-auto">
-            <div className="bg-black/60 backdrop-blur-md border-x-2 border-fest-gold px-6 sm:px-10 py-3 rounded-lg shadow-2xl">
-              <p className="text-white text-lg sm:text-xl md:text-3xl font-bold tracking-[0.1em] sm:tracking-[0.2em] flex items-center justify-center gap-2 sm:gap-3 whitespace-nowrap">
-                <span className="text-fest-gold">coming</span> • 
-                <span className="text-fest-gold">soon.</span> • 
+          {/* Coming Soon Badge */}
+          <div className="mt-8 md:mt-12 w-fit">
+            <div className="bg-black/40 backdrop-blur-xl border-x-[3px] border-fest-gold px-6 py-3 rounded-2xl shadow-xl">
+              <p className="text-white text-xs sm:text-base md:text-3xl font-black tracking-[0.15em] flex items-center justify-center gap-3 uppercase italic">
+                <span className="text-fest-gold">coming</span> 
+                <span className="text-white opacity-20">•</span> 
+                <span className="text-fest-gold">soon.</span> 
+                <span className="text-white opacity-20">•</span> 
                 <span className="text-fest-gold">stay</span> tuned
               </p>
             </div>
           </div>
-
-          <div className="h-[2px] w-24 sm:w-32 bg-linear-to-r from-transparent via-fest-gold to-transparent mx-auto"></div>
         </div>
 
-        {/* Right Logo (Fest Logo) - Circular Glassmorphism */}
-        <div className="flex-shrink-0 animate-float-delayed order-3">
-          <div className="w-36 h-36 sm:w-44 sm:h-44 md:w-52 md:h-52 rounded-full p-1 bg-white/10 backdrop-blur-md border border-fest-gold/30 shadow-[0_0_30px_rgba(255,204,0,0.2)] flex items-center justify-center">
-            <img 
-              src={logo2} 
-              className="w-[85%] h-[85%] object-contain rounded-full" 
-              alt="Fest Logo" 
-              onError={(e) => { e.target.src = 'https://via.placeholder.com/150/ffffff/000000?text=Logo2' }} 
-            />
+        {/* Right Logo (Fest Logo) */}
+        <div className="flex-shrink-0 animate-float-delayed order-3" data-aos="fade-left">
+          <div className="w-24 h-24 sm:w-36 sm:h-36 md:w-52 md:h-52 rounded-full p-1 bg-white/5 backdrop-blur-md border border-white/10 shadow-2xl flex items-center justify-center">
+            <img src={logo2} className="w-[80%] h-[80%] object-contain" alt="Fest Logo" />
           </div>
         </div>
 
       </div>
+
+      {/* Subtle Bottom Glow Line */}
+      <div className="h-[1px] w-32 bg-gradient-to-r from-transparent via-fest-gold to-transparent opacity-30 mt-auto mb-10"></div>
     </section>
+    </PageTransition>
   );
 };
 

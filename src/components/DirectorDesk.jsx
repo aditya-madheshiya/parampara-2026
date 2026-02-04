@@ -1,5 +1,5 @@
 import React from 'react';
-import directorImg from '../assets/director.png';
+import directorImg from '../assets/director.jpeg';
 
 const DirectorDesk = () => {
   return (
@@ -21,7 +21,7 @@ const DirectorDesk = () => {
               our annual cultural extravaganza that celebrates heritage, creativity, and excellence.
             </p>
             <p>
-              As we mark <span className="text-fest-gold font-bold">25 years of ITM, GIDA, Gorakhpur</span>, 
+              As we mark <span className="text-fest-gold font-bold">26 years of ITM, GIDA, Gorakhpur</span>, 
               this milestone is a testament to our legacy of academic and cultural enrichment.
             </p>
           </div>

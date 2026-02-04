@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PageTransition from '../components/PageTransition';
 
 // --- IMAGES IMPORT SECTION ---
 // Sabhi images ko 'src/assets/sportpic/' folder mein .jpg format mein rakhein
@@ -44,6 +45,7 @@ const SportsEvents = () => {
   ];
 
   return (
+    <PageTransition>
     <div className="min-h-screen pt-32 pb-20 px-6 bg-black">
       <div className="max-w-7xl mx-auto">
         
@@ -109,6 +111,7 @@ const SportsEvents = () => {
         </div>
       </div>
     </div>
+    </PageTransition>
   );
 };
 

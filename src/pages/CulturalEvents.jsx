@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import PageTransition from '../components/PageTransition';
 // --- IMAGES IMPORT SECTION ---
 // Sabhi images ko 'src/assets/culturepic/' folder mein .jpg ya .jpeg format mein rakhein
 import rangoliImg from '../assets/culturepic/rangoli.jpeg';
@@ -52,6 +52,7 @@ const CulturalEvents = () => {
   ];
 
   return (
+    <PageTransition>
     <div className="min-h-screen pt-32 pb-20 px-6 bg-black">
       <div className="max-w-7xl mx-auto">
         
@@ -117,6 +118,7 @@ const CulturalEvents = () => {
         </div>
       </div>
     </div>
+    </PageTransition>
   );
 };
 
