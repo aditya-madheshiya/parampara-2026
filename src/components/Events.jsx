@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const Events = () => {
   const categories = [
-    { title: "Cultural", icon: "🎭", path: "/cultural", events: ["Dance", "Singing", "Drama" ,"Many More...."] },
     { title: "Technical", icon: "💻", path: "/technical", events: ["BGMI", "Free Fire", "Mini Hackathon" ,"Many More...."] },
+    { title: "Cultural", icon: "🎭", path: "/cultural", events: ["Dance", "Singing", "Drama" ,"Many More...."] },
     { title: "Sports", icon: "🏆", path: "/sports", events: ["Kho-Kho", "Kabaddi", "Football " , "Many More...."] }
   ];
 
