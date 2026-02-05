@@ -7,8 +7,7 @@ import PageTransition from '../components/PageTransition';
 
 const Hero = () => {
   return (
-     <PageTransition>
-    // 'min-h-screen' ke saath 'flex-col' use kiya hai taaki spacing auto-adjust ho
+    <PageTransition>
     <section className="relative min-h-screen w-full flex flex-col items-center overflow-hidden bg-transparent">
       
       {/* Background Decor */}
@@ -18,7 +17,6 @@ const Hero = () => {
       </div>
 
       {/* --- MAIN CONTENT WRAPPER --- */}
-      {/* pt-24 (mobile) aur md:pt-32 (desktop) Navbar ke liye space banayega */}
       <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 md:gap-12 z-10 pt-28 md:pt-40 px-4 pb-10 my-auto">
         
         {/* Left Logo (ITM) */}
@@ -31,12 +29,20 @@ const Hero = () => {
         {/* Center Content Section */}
         <div className="flex-[2] text-center order-1 md:order-2 w-full flex flex-col items-center justify-center" data-aos="zoom-in">
           
-          {/* Header Text - Added more margin bottom */}
-          <h2 className="text-fest-gold text-[10px] sm:text-xs md:text-lg tracking-[0.4em] font-black uppercase mb-6 drop-shadow-md italic">
-            Technical | Cultural | Sports 
-          </h2>
+          {/* Nayi Hindi Tagline Section */}
+          <div className="mb-4 flex flex-col items-center gap-1">
+             <h3 className="text-white/90 text-lg sm:text-xl md:text-3xl font-serif tracking-wider drop-shadow-lg">
+                शिक्षा <span className="text-fest-gold">•</span> संस्कार <span className="text-fest-gold">•</span> नवाचार
+             </h3>
+             <div className="h-[1px] w-20 bg-fest-gold/50 mb-4"></div>
+             
+             {/* English Sub-header */}
+             <h2 className="text-fest-gold text-[10px] sm:text-xs md:text-lg tracking-[0.4em] font-black uppercase drop-shadow-md italic">
+                Technical | Cultural | Sports 
+             </h2>
+          </div>
           
-          {/* PARAMPARA PNG - Controlled Size */}
+          {/* PARAMPARA PNG */}
           <div className="w-full max-w-[280px] xs:max-w-[340px] sm:max-w-[500px] md:max-w-[700px] lg:max-w-[850px] xl:max-w-[950px] transition-all">
             <img 
               src={paramparaPng} 

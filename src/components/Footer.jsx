@@ -1,97 +1,93 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Instagram } from 'lucide-react'; // Instagram icon import kiya
-import logo from '../assets/logo.jpeg';
+import { Instagram, MapPin, ExternalLink } from 'lucide-react';
+import paramparaPng from '../assets/parampara_text.png'; 
 
 const Footer = () => {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
   const socialLinks = [
-    { name: "Official", link: "https://www.instagram.com/parampara_2k26_official?igsh=MTBxODAyZ28wMzdkYw==", label: "OFFICIAL PAGE" },
-    { name: "Technical", link: "https://www.instagram.com/parampara_2k26_technical?igsh=ajZud3I1bzlsc3Uw", label: "TECHNICAL PAGE" },
-    { name: "Sports", link: "https://www.instagram.com/parampara_2k26_sports?igsh=cnd4NHUzb2wxeDdw", label: "SPORTS PAGE" },
-    { name: "Cultural", link: "https://www.instagram.com/parampara_2k26_cultural?utm_source=qr&igsh=d2xxNTFwaG16bmlh", label: "CULTURAL PAGE" }
+    { name: "Official", link: "https://www.instagram.com/parampara_2k26_official?igsh=MTBxODAyZ28wMzdkYw==" },
+    { name: "Technical", link: "https://www.instagram.com/parampara_2k26_technical?igsh=ajZud3I1bzlsc3Uw" },
+    { name: "Sports", link: "https://www.instagram.com/parampara_2k26_sports?igsh=cnd4NHUzb2wxeDdw" },
+    { name: "Cultural", link: "https://www.instagram.com/parampara_2k26_cultural?utm_source=qr&igsh=d2xxNTFwaG16bmlh" }
   ];
 
   return (
-    <footer className="bg-[#050505] border-t border-fest-gold/20 pt-16 pb-8 px-6 relative overflow-hidden">
+    <footer className="bg-[#050505] border-t border-white/10 pt-16 pb-8 px-6 relative overflow-hidden">
+      
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-          
-          {/* 1. Brand Section */}
-          <div className="space-y-6">
-            <Link to="/" onClick={scrollToTop} className="flex items-center gap-3">
-              <img src={logo} alt="Logo" className="w-12 h-12 rounded-lg border border-fest-gold/30" />
-              <h2 className="text-2xl font-black text-white italic uppercase tracking-tighter">
-                Parampara <span className="text-fest-gold">2026</span>
-              </h2>
-            </Link>
-            <p className="text-gray-500 text-sm leading-relaxed">
-              Celebrating 26 glorious years of legacy at ITM GIDA, Gorakhpur.
-            </p>
-          </div>
+        
+        {/* 1. TOP BRANDING - Responsive Image Size */}
+        <div className="flex flex-col items-center mb-16" data-aos="fade-up">
+          <img 
+            src={paramparaPng} 
+            alt="Parampara" 
+            className="h-12 sm:h-16 md:h-20 w-auto drop-shadow-[0_0_15px_rgba(255,204,0,0.3)] mb-4"
+          />
+          <p className="text-fest-gold/60 text-[9px] md:text-xs font-black tracking-[0.4em] uppercase text-center">
+            Celebrating 26 glorious years of legacy at ITM GIDA, Gorakhpur.
+          </p>
+        </div>
 
-          {/* 2. Explore Links */}
-          <div>
-            <h3 className="text-white font-black uppercase text-sm tracking-widest mb-6 underline decoration-fest-gold decoration-2 underline-offset-8">Explore</h3>
-            <ul className="space-y-4 text-gray-400 text-sm font-bold">
-              <li className="hover:text-fest-gold transition-colors"><Link to="/" onClick={scrollToTop}>HOME</Link></li>
-              <li className="hover:text-fest-gold transition-colors"><Link to="/about" onClick={scrollToTop}>ABOUT FEST</Link></li>
-              <li className="hover:text-fest-gold transition-colors"><Link to="/contact" onClick={scrollToTop}>CONTACT TEAM</Link></li>
+        {/* 2. MAIN GRID - 1 column on mobile, 3 columns on desktop */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 text-center sm:text-left">
+          
+          {/* Quick Links Section */}
+          <div className="flex flex-col items-center sm:items-start">
+            <h3 className="text-white font-black uppercase text-sm tracking-widest mb-6 border-b-2 border-fest-gold pb-1">Navigate</h3>
+            <ul className="space-y-3 text-gray-400 text-xs font-bold uppercase tracking-widest">
+              <li className="hover:text-fest-gold transition-colors"><Link to="/" onClick={scrollToTop}>Home</Link></li>
+              <li className="hover:text-fest-gold transition-colors"><Link to="/about" onClick={scrollToTop}>About Fest</Link></li>
+              <li className="hover:text-fest-gold transition-colors"><Link to="/contact" onClick={scrollToTop}>Contact Team</Link></li>
             </ul>
           </div>
 
-          {/* 3. Follow Us (With Official Instagram Icons) */}
-          <div>
-            <h3 className="text-white font-black uppercase text-sm tracking-widest mb-6 underline decoration-fest-gold decoration-2 underline-offset-8">Follow Us Instagram</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {/* Connect/Social Section */}
+          <div className="flex flex-col items-center sm:items-start">
+            <h3 className="text-white font-black uppercase text-sm tracking-widest mb-6 border-b-2 border-fest-gold pb-1">Connect</h3>
+            <div className="grid grid-cols-2 gap-x-6 gap-y-3">
               {socialLinks.map((social) => (
                 <a 
                   key={social.name} 
                   href={social.link} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/10 hover:border-fest-gold/50 hover:bg-fest-gold/10 transition-all group"
+                  className="flex items-center gap-2 text-gray-400 hover:text-white transition-all text-[11px] font-bold uppercase tracking-tighter"
                 >
-                  <div className="w-15 h-10 rounded-lg bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
-                    <Instagram size={20} strokeWidth={2.5} />
-                  </div>
-                  <div className="flex flex-col">
-                    <span className="text-[10px] text-fest-gold font-black tracking-widest uppercase">{social.label}</span>
-                    <span className="text-xs text-white font-bold uppercase tracking-tighter">{social.name}</span>
-                  </div>
+                  <Instagram size={14} className="text-fest-gold" /> {social.name}
                 </a>
               ))}
             </div>
           </div>
 
-          {/* 4. Venue Section */}
-          <div>
-            <h3 className="text-white font-black uppercase text-sm tracking-widest mb-6 underline decoration-fest-gold decoration-2 underline-offset-8">Venue</h3>
-            <p className="text-gray-400 text-sm leading-relaxed font-medium">
-              ITM GIDA, Sector-7, <br />
-              GIDA, Gorakhpur, UP - 273209
-            </p>
+          {/* Venue Section */}
+          <div className="flex flex-col items-center sm:items-start">
+            <h3 className="text-white font-black uppercase text-sm tracking-widest mb-6 border-b-2 border-fest-gold pb-1">Venue</h3>
+            <div className="flex items-start gap-3 text-gray-400 text-xs font-medium italic">
+              <MapPin size={18} className="text-fest-gold flex-shrink-0" />
+              <p>Sector-7, GIDA, Gorakhpur, UP - 273209</p>
+            </div>
+            <a href="https://maps.app.goo.gl/1ArKZ3XuGgBBBjz19" className="mt-4 inline-flex items-center gap-2 text-fest-gold text-[10px] font-black tracking-widest uppercase hover:underline">
+               Locate on Map <ExternalLink size={12} />
+            </a>
           </div>
 
         </div>
 
-        {/* BOTTOM LINE & CREDITS */}
-        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-gray-600 text-[9px] uppercase tracking-[0.4em] font-black">
-            © 2026 PARAMPARA. ITM GIDA GORAKHPUR.
+        {/* 3. BOTTOM BAR - Credits */}
+        <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+          <p className="text-gray-600 text-[10px] font-bold uppercase tracking-widest">
+            © 2026 ITM GIDA. All Rights Reserved.
           </p>
 
-          <div className="flex flex-col items-center md:items-end group">
-            <span className="text-gray-500 text-[8px] uppercase tracking-[0.3em] font-bold mb-1">Designed & Developed By</span>
-            <div className="flex items-center gap-2 text-white font-black italic uppercase tracking-tighter text-sm">
-              <span className="group-hover:text-fest-gold transition-colors duration-500">Aditya Madheshiya</span>
-              <span className="text-gray-600 font-bold text-xs">&</span>
-              <span className="group-hover:text-fest-gold transition-colors duration-500">Anshit Kumar Srivastav</span>
+          <div className="flex flex-col items-center md:items-end">
+            <span className="text-gray-500 text-[8px] uppercase tracking-[0.3em] font-bold mb-1">Developed By</span>
+            <div className="flex items-center gap-2 text-white font-black italic uppercase text-xs tracking-tighter">
+              <span className="hover:text-fest-gold transition-colors">Aditya Madheshiya</span>
+              <span className="text-fest-gold">/</span>
+              <span className="hover:text-fest-gold transition-colors">Anshit Kumar Srivastav</span>
             </div>
-            <div className="w-0 h-[1.5px] bg-fest-gold group-hover:w-full transition-all duration-700 mt-1 shadow-[0_0_10px_#ffcc00]"></div>
           </div>
         </div>
       </div>

@@ -27,6 +27,7 @@ import Contact from './pages/Contact';
 import About from './pages/About';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import Updates from './pages/Updates';
 
 function App() {
   return (
@@ -64,6 +65,7 @@ function App() {
         <Route path="/cultural" element={<CulturalEvents />} />
         <Route path="/technical" element={<TechnicalEvents />} />
         <Route path="/sports" element={<SportsEvents />} />
+        <Route path="/updates" element={<Updates />} />
       </Routes>
       <Footer /> {/* Footer hamesha niche rahega */}
     </Router>

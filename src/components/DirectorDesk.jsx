@@ -28,7 +28,7 @@ const DirectorDesk = () => {
 
           <div className="pt-4">
             <p className="text-fest-gold font-black text-2xl uppercase flex items-center justify-center md:justify-start gap-3">
-              <span className="text-white text-3xl italic">✒️</span> Dr. NK Singh
+              <span className="text-white text-3xl italic">✒️</span> Dr. N K Singh
             </p>
           </div>
         </div>
