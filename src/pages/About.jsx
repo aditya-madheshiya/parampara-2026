@@ -12,14 +12,14 @@ const About = () => {
       role: "Lead Developer", 
       img: adityaImg,
       linkedin: "https://www.linkedin.com/in/aditya-madheshiya-829899322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" // Apna LinkedIn link yahan dalein
-    },
-    { 
-      id: 2, 
-      name: "Anshit Kumar Srivastav", 
-      role: "Co-Developer", 
-      img: anshitImg,
-      linkedin: "https://www.linkedin.com/in/anshit-kumar-srivastava?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" // Anshit ka LinkedIn link yahan dalein
     }
+    // { 
+    //   id: 2, 
+    //   name: "Anshit Kumar Srivastav", 
+    //   role: "Co-Developer", 
+    //   img: anshitImg,
+    //   linkedin: "https://www.linkedin.com/in/anshit-kumar-srivastava?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" // Anshit ka LinkedIn link yahan dalein
+    // }
   ];
 
   return (
@@ -47,7 +47,7 @@ const About = () => {
 
         {/* Developers Section */}
         <h2 className="text-3xl md:text-5xl font-black text-white uppercase italic mb-12 text-center tracking-tighter">
-          Meet the <span className="text-fest-gold">Developers</span>
+          Meet the <span className="text-fest-gold">Developer</span>
         </h2>
         
         <div className="flex flex-wrap justify-center gap-10">

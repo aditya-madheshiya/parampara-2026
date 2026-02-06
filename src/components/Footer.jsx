@@ -85,8 +85,6 @@ const Footer = () => {
             <span className="text-gray-500 text-[8px] uppercase tracking-[0.3em] font-bold mb-1">Developed By</span>
             <div className="flex items-center gap-2 text-white font-black italic uppercase text-xs tracking-tighter">
               <span className="hover:text-fest-gold transition-colors">Aditya Madheshiya</span>
-              <span className="text-fest-gold">/</span>
-              <span className="hover:text-fest-gold transition-colors">Anshit Kumar Srivastav</span>
             </div>
           </div>
         </div>

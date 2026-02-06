@@ -25,3 +25,18 @@ body {
 
 .animate-float { animation: float 5s ease-in-out infinite; }
 .animate-float-delayed { animation: float 6s ease-in-out infinite; animation-delay: 1s; }
+
+/* 1024px tak sab kuch mobile style mein rahega */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  
+  /* Hero section text alignment fix */
+  .hero-text {
+    font-size: 3rem !important; /* Bada text iPad par adjust ho jayega */
+    text-align: center !important;
+  }
+}

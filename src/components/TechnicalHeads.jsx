@@ -7,7 +7,7 @@ import anshikaImg from '../assets/techhead/anshika.jpeg';
 const TechnicalHeads = () => {
   const heads = [
     { id: 1, name: "Anurag Gupta", role: "Technical Head", img: anuragImg, whatsapp: "919336139565" },
-    { id: 2, name: "Anshit Kumar Srivastav", role: "Technical Head", img: anshitImg, whatsapp: "918545999173" },
+    // { id: 2, name: "Anshit Kumar Srivastav", role: "Technical Head", img: anshitImg, whatsapp: "918545999173" },
     { id: 3, name: "Aditya Madheshiya", role: "Technical Head", img: adityaImg, whatsapp: "919792415039" },
     { id: 4, name: "Anshika", role: "Technical Head", img: anshikaImg, whatsapp: "918303314290" }
   ];
@@ -19,7 +19,7 @@ const TechnicalHeads = () => {
       </h2>
 
       {/* FIXED GRID: Desktop pe 4 columns, Mobile pe 1 */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-[1400px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 w-full max-w-[1400px]">
         {heads.map((head) => (
           <div 
             key={head.id}
