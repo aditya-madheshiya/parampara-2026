@@ -55,11 +55,11 @@ const Hero = () => {
           <div className="mt-8 md:mt-12 w-fit">
             <div className="bg-black/40 backdrop-blur-xl border-x-[3px] border-fest-gold px-6 py-3 rounded-2xl shadow-xl">
               <p className="text-white text-xs sm:text-base md:text-3xl font-black tracking-[0.15em] flex items-center justify-center gap-3 uppercase italic">
-                <span className="text-fest-gold">coming</span> 
+                <span className="text-fest-gold">12</span> 
                 <span className="text-white opacity-20">•</span> 
-                <span className="text-fest-gold">soon.</span> 
+                <span className="text-fest-gold">13</span> 
                 <span className="text-white opacity-20">•</span> 
-                <span className="text-fest-gold">stay</span> tuned
+                <span className="text-fest-gold">14</span> March
               </p>
             </div>
           </div>
