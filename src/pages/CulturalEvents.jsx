@@ -23,6 +23,8 @@ import shankhImg from '../assets/culturepic/shankh.jpeg';
 import laughterImg from '../assets/culturepic/laughter.jpeg';
 import pyramidImg from '../assets/culturepic/pyramid.jpeg';
 import filmistanImg from '../assets/culturepic/filmistan.jpeg';
+import battleofbandImg from '../assets/culturepic/battleofband.jpeg';
+
 
 // Fallback image (Default JPEG)
 // import defaultCultureImg from '../assets/culturepic/default-culture.jpg';
@@ -48,7 +50,8 @@ const CulturalEvents = () => {
     { id: 17, name: "Shankhannd", link: "https://forms.gle/random17", image: shankhImg },
     { id: 18, name: "Laughter Drive", link: "https://forms.gle/random18", image: laughterImg },
     { id: 19, name: "Pyramid", link: "https://forms.gle/random19", image: pyramidImg },
-    { id: 20, name: "Filmistan", link: "https://forms.gle/random20", image: filmistanImg }
+    { id: 20, name: "Filmistan", link: "https://forms.gle/random20", image: filmistanImg },
+    { id: 21, name: "Battle of bands", link: "https://forms.gle/random21", image: battleofbandImg }
   ];
 
   return (

@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
+import { X, ExternalLink, GraduationCap, ArrowLeft } from 'lucide-react';
 import PageTransition from '../components/PageTransition';
 
-// --- IMAGES IMPORT SECTION ---
-// Sabhi images ko 'src/assets/sportpic/' folder mein .jpg format mein rakhein
+// --- IMAGES IMPORT ---
 import khoKhoImg from '../assets/sportpic/khokho.jpeg';
 import kabaddiImg from '../assets/sportpic/kabaddi.jpeg';
 import footballImg from '../assets/sportpic/football.jpeg';
@@ -21,96 +22,124 @@ import carromImg from '../assets/sportpic/carrom.jpeg';
 import tugOfWarImg from '../assets/sportpic/tugofwar.jpeg';
 import armWrestlingImg from '../assets/sportpic/armwrestling.jpeg';
 
-// Fallback image agar koi photo miss ho jaye
-// import defaultSportsImg from '../assets/sportpic/default-sports.jpg';
-
 const SportsEvents = () => {
+  const [selectedEvent, setSelectedEvent] = useState(null);
+
+  // --- COMPLETE 16 EVENTS ARRAY ---
   const sportsData = [
-    { id: 1, name: "KHO-KHO", link: "https://forms.gle/sports1", image: khoKhoImg },
-    { id: 2, name: "KABBADDI", link: "https://forms.gle/sports2", image: kabaddiImg },
-    { id: 3, name: "FOOTBALL", link: "https://forms.gle/sports3", image: footballImg },
-    { id: 4, name: "TABLE TENNIS", link: "https://forms.gle/sports4", image: tableTennisImg },
-    { id: 5, name: "BASKETBALL", link: "https://forms.gle/sports5", image: basketballImg },
-    { id: 6, name: "VOLLEY BALL", link: "https://forms.gle/sports6", image: volleyballImg },
-    { id: 7, name: "BADMINTON", link: "https://forms.gle/sports7", image: badmintonImg },
-    { id: 8, name: "CHESS", link: "https://forms.gle/sports8", image: chessImg },
-    { id: 9, name: "LONG JUMP", link: "https://forms.gle/sports9", image: longJumpImg },
-    { id: 10, name: "HIGH JUMP", link: "https://forms.gle/sports10", image: highJumpImg },
-    { id: 11, name: "DISCUSS THROW", link: "https://forms.gle/sports11", image: discussImg },
-    { id: 12, name: "SHOTPUT", link: "https://forms.gle/sports12", image: shotputImg },
-    { id: 13, name: "100 METRE RACE", link: "https://forms.gle/sports13", image: raceImg },
-    { id: 14, name: "CARROM", link: "https://forms.gle/sports14", image: carromImg },
-    { id: 15, name: "TUG OF WAR", link: "https://forms.gle/sports15", image: tugOfWarImg },
-    { id: 16, name: "ARM WRESTLING", link: "https://forms.gle/sports16", image: armWrestlingImg }
+    { id: 1, name: "KHO-KHO", image: khoKhoImg, internal: "LINK_HERE", external: "LINK_HERE" },
+    { id: 2, name: "KABBADDI", image: kabaddiImg, internal: "LINK_HERE", external: "LINK_HERE" },
+    { id: 3, name: "FOOTBALL", image: footballImg, internal: "LINK_HERE", external: "LINK_HERE" },
+    { id: 4, name: "TABLE TENNIS", image: tableTennisImg, internal: "LINK_HERE", external: "LINK_HERE" },
+    { id: 5, name: "BASKETBALL", image: basketballImg, internal: "LINK_HERE", external: "LINK_HERE" },
+    { id: 6, name: "VOLLEY BALL", image: volleyballImg, internal: "LINK_HERE", external: "LINK_HERE" },
+    { id: 7, name: "BADMINTON", image: badmintonImg, internal: "LINK_HERE", external: "LINK_HERE" },
+    { id: 8, name: "CHESS", image: chessImg, internal: "LINK_HERE", external: "LINK_HERE" },
+    { id: 9, name: "LONG JUMP", image: longJumpImg, internal: "LINK_HERE", external: "LINK_HERE" },
+    { id: 10, name: "HIGH JUMP", image: highJumpImg, internal: "LINK_HERE", external: "LINK_HERE" },
+    { id: 11, name: "DISCUSS THROW", image: discussImg, internal: "LINK_HERE", external: "LINK_HERE" },
+    { id: 12, name: "SHOTPUT", image: shotputImg, internal: "LINK_HERE", external: "LINK_HERE" },
+    { id: 13, name: "100 METRE RACE", image: raceImg, internal: "LINK_HERE", external: "LINK_HERE" },
+    { id: 14, name: "CARROM", image: carromImg, internal: "LINK_HERE", external: "LINK_HERE" }
+
   ];
 
   return (
     <PageTransition>
-    <div className="min-h-screen pt-32 pb-20 px-6 bg-black">
-      <div className="max-w-7xl mx-auto">
-        
-        {/* Page Header */}
-        <div className="flex justify-between items-center mb-12 flex-wrap gap-4">
-          <h1 className="text-4xl md:text-6xl font-black text-white uppercase italic">
-            Sports <span className="text-fest-gold">Events</span>
-          </h1>
-          <Link 
-            to="/" 
-            className="text-fest-gold border border-fest-gold/50 px-6 py-2 rounded-full hover:bg-fest-gold hover:text-black transition-all font-bold tracking-widest text-sm"
-          >
-            ← BACK HOME
-          </Link>
-        </div>
+      <div className="min-h-screen pt-32 pb-20 px-6 bg-black overflow-x-hidden">
+        <div className="max-w-7xl mx-auto">
+          
+          <div className="flex flex-col md:flex-row justify-between items-center mb-16 gap-6">
+            <h1 className="text-4xl md:text-7xl font-black text-white uppercase italic tracking-tighter">
+              Sports <span className="text-fest-gold">Events</span>
+            </h1>
+            <Link to="/" className="flex items-center gap-2 text-fest-gold border border-fest-gold/30 px-8 py-3 rounded-full hover:bg-fest-gold hover:text-black transition-all font-black tracking-widest text-xs uppercase">
+              <ArrowLeft size={16} /> BACK HOME
+            </Link>
+          </div>
 
-        {/* 16 Sports Events Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {sportsData.map((sport) => (
-            <div 
-              key={sport.id} 
-              className="bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl hover:border-fest-gold/50 transition-all hover:-translate-y-2 group flex flex-col overflow-hidden"
-            >
-              {/* Image Section - 16:9 Aspect Ratio */}
-              <div className="w-full aspect-video overflow-hidden border-b border-white/5 bg-black/50 relative">
-                <img 
-                  src={sport.image} 
-                  alt={sport.name}
-                  loading="lazy"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  onError={(e) => { e.target.src = defaultSportsImg }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80"></div>
-              </div>
-
-              {/* Content Section */}
-              <div className="p-6 flex flex-col justify-between flex-grow">
-                <div>
-                  <div className="flex justify-between items-start mb-4">
-                    <div className="w-10 h-10 bg-fest-gold/20 rounded-lg flex items-center justify-center text-fest-gold font-bold group-hover:bg-fest-gold group-hover:text-black transition-all text-xs">
-                      {sport.id}
-                    </div>
-                  </div>
-                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-fest-gold transition-colors italic uppercase leading-tight">
-                    {sport.name}
-                  </h3>
-                  <p className="text-gray-400 text-xs mb-6 leading-relaxed">
-                    Showcase your strength and sportsmanship!
-                  </p>
+          {/* Responsive Grid Fixed at lg (1024px) */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {sportsData.map((event) => (
+              <div key={event.id} className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-[2.5rem] hover:border-fest-gold/40 transition-all duration-500 group flex flex-col overflow-hidden shadow-2xl">
+                <div className="w-full aspect-video overflow-hidden relative">
+                  <img src={event.image} alt={event.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
                 </div>
 
-                <a 
-                  href={sport.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="w-full bg-fest-gold text-black py-3 rounded-xl font-black uppercase text-center tracking-tighter hover:bg-white transition-all shadow-lg text-xs"
-                >
-                  Register Now
-                </a>
+                <div className="p-8 flex flex-col justify-between flex-grow">
+                  <div>
+                    <h3 className="text-2xl font-black text-white mb-2 uppercase italic leading-none group-hover:text-fest-gold transition-colors tracking-tighter">
+                      {event.name}
+                    </h3>
+                    <p className="text-gray-500 text-[10px] font-bold uppercase tracking-[0.2em] mb-8">Showcase your legacy</p>
+                  </div>
+
+                  <button 
+                    onClick={() => setSelectedEvent(event)}
+                    className="w-full bg-fest-gold text-black py-4 rounded-2xl font-black uppercase text-[11px] tracking-widest hover:bg-white transition-all transform active:scale-95 shadow-[0_0_20px_rgba(255,204,0,0.2)]"
+                  >
+                    Register Now
+                  </button>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
+
+        {/* --- DUAL REGISTRATION MODAL --- */}
+        <AnimatePresence>
+          {selectedEvent && (
+            <div className="fixed inset-0 z-[1000] flex items-center justify-center p-6">
+              <motion.div 
+                initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+                onClick={() => setSelectedEvent(null)}
+                className="absolute inset-0 bg-black/95 backdrop-blur-md"
+              />
+
+              <motion.div 
+                initial={{ scale: 0.9, opacity: 0, y: 30 }} animate={{ scale: 1, opacity: 1, y: 0 }} exit={{ scale: 0.9, opacity: 0, y: 30 }}
+                className="relative w-full max-w-md bg-[#0a0a0a] border border-white/10 p-10 rounded-[3rem] shadow-2xl"
+              >
+                <button onClick={() => setSelectedEvent(null)} className="absolute top-8 right-8 text-gray-500 hover:text-fest-gold">
+                  <X size={28} />
+                </button>
+
+                <div className="text-center mb-10">
+                  <h2 className="text-3xl font-black text-white uppercase italic mb-2 tracking-tighter">{selectedEvent.name}</h2>
+                  <p className="text-fest-gold text-[10px] font-black uppercase tracking-[0.4em]">Select Participant Type</p>
+                </div>
+
+                <div className="flex flex-col gap-5">
+                  <a href={selectedEvent.internal} target="_blank" rel="noopener noreferrer" 
+                     className="flex items-center justify-between p-6 bg-white/5 border border-white/10 rounded-3xl hover:bg-fest-gold hover:text-black transition-all group">
+                    <div className="flex items-center gap-5">
+                      <GraduationCap size={32} className="text-fest-gold group-hover:text-black" />
+                      <div className="text-left">
+                        <span className="block font-black uppercase italic text-lg leading-none">Internal</span>
+                        <span className="text-[9px] uppercase font-bold opacity-60">ITM GIDA Students</span>
+                      </div>
+                    </div>
+                    <ExternalLink size={20} />
+                  </a>
+
+                  <a href={selectedEvent.external} target="_blank" rel="noopener noreferrer" 
+                     className="flex items-center justify-between p-6 bg-white/5 border border-white/10 rounded-3xl hover:bg-white hover:text-black transition-all group">
+                    <div className="flex items-center gap-5">
+                      <ExternalLink size={32} className="text-fest-gold group-hover:text-black" />
+                      <div className="text-left">
+                        <span className="block font-black uppercase italic text-lg leading-none">External</span>
+                        <span className="text-[9px] uppercase font-bold opacity-60">Other Institutions</span>
+                      </div>
+                    </div>
+                    <ExternalLink size={20} />
+                  </a>
+                </div>
+              </motion.div>
+            </div>
+          )}
+        </AnimatePresence>
       </div>
-    </div>
     </PageTransition>
   );
 };
