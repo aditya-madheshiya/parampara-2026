@@ -31,27 +31,27 @@ import battleofbandImg from '../assets/culturepic/battleofband.jpeg';
 
 const CulturalEvents = () => {
   const eventData = [
-    { id: 1, name: "Rangoli", link: "https://forms.gle/random1", image: rangoliImg },
-    { id: 2, name: "Flower Pot Making", link: "https://forms.gle/random2", image: flowerImg },
-    { id: 3, name: "Singing", link: "https://forms.gle/random3", image: singingImg },
-    { id: 4, name: "Dancing", link: "https://forms.gle/random4", image: dancingImg },
-    { id: 5, name: "Poster Making", link: "https://forms.gle/random5", image: posterImg },
-    { id: 6, name: "Mandala Art", link: "https://forms.gle/random6", image: mandalaImg },
-    { id: 7, name: "Skit", link: "https://forms.gle/random7", image: skitImg },
-    { id: 8, name: "Stand-up", link: "https://forms.gle/random8", image: standupImg },
-    { id: 9, name: "Best Out Of Waste", link: "https://forms.gle/random9", image: wasteImg },
-    { id: 10, name: "Mehandi Design", link: "https://forms.gle/random10", image: mehandiImg },
-    { id: 11, name: "Dumb Chardes", link: "https://forms.gle/random11", image: dumbImg },
-    { id: 12, name: "Poetry", link: "https://forms.gle/random12", image: poetryImg },
-    { id: 13, name: "Face Painting", link: "https://forms.gle/random13", image: faceImg },
-    { id: 14, name: "Nail Art", link: "https://forms.gle/random14", image: nailImg },
-    { id: 15, name: "Tulsi Ramayana", link: "https://forms.gle/random15", image: ramayanaImg },
-    { id: 16, name: "Heritage Quiz", link: "https://forms.gle/random16", image: heritageImg },
-    { id: 17, name: "Shankhannd", link: "https://forms.gle/random17", image: shankhImg },
-    { id: 18, name: "Laughter Drive", link: "https://forms.gle/random18", image: laughterImg },
-    { id: 19, name: "Pyramid", link: "https://forms.gle/random19", image: pyramidImg },
-    { id: 20, name: "Filmistan", link: "https://forms.gle/random20", image: filmistanImg },
-    { id: 21, name: "Battle of bands", link: "https://forms.gle/random21", image: battleofbandImg }
+    { id: 1, name: "Rangoli", link: "https://docs.google.com/forms/d/e/1FAIpQLSecuSeR3NpTkliuaWScZimfhG3F6MMEB4gYZXyaHK6Utr5SHA/viewform?usp=header ", image: rangoliImg },
+    { id: 2, name: "Flower Pot Making", link: "https://forms.gle/cnSJFfMs6nPzdrna6", image: flowerImg },
+    { id: 3, name: "Singing", link: "https://docs.google.com/forms/d/13qUqAxhDrRmfRvO3_gpcWJ04XG_VdBWh2ZybSkoaJpk/edit", image: singingImg },
+    { id: 4, name: "Dancing", link: "https://docs.google.com/forms/d/e/1FAIpQLSfsf5BvpcuO6beXFrBkjErUsG_lOZBA4Ibq68gdCxRhotCPFQ/viewform?usp=publish-editor", image: dancingImg },
+    { id: 5, name: "Poster Making", link: "https://docs.google.com/forms/d/1QEzIc3KruWsV4bIc4h4ze5SAGyolvUPAF37qciKuAUw/edit?ts=698aaef4", image: posterImg },
+    { id: 6, name: "Mandala Art", link: "https://forms.gle/BYjcWTHEucLiuvBk9", image: mandalaImg },
+    { id: 7, name: "Skit", link: "https://forms.gle/kRE9d2DYrCpjvi7i6 ", image: skitImg },
+    { id: 8, name: "Stand-up", link: "https://docs.google.com/forms/d/1iF5zIZqNVgS72JwVLhpvOR5s4rzgRua9CPAY6009iVQ/edit", image: standupImg },
+    { id: 9, name: "Best Out Of Waste", link: "https://forms.gle/GXrhTMMpo9Tbarxz7", image: wasteImg },
+    { id: 10, name: "Mehandi Design", link: "https://docs.google.com/forms/d/e/1FAIpQLSevGaaskz0w037Xxq7tbojqtkP75w3vXcyeTvwgU9n1ubcJJA/viewform?usp=dialog", image: mehandiImg },
+    { id: 11, name: "Dumb Chardes", link: "https://forms.gle/aqSuU4Br2jxXukUX8", image: dumbImg },
+    { id: 12, name: "Poetry", link: "https://forms.gle/RCiNKz3eoYyptfuC6", image: poetryImg },
+    { id: 13, name: "Face Painting", link: "https://docs.google.com/forms/d/e/1FAIpQLSeEILzKIlXnDResfXRYQeKYFkDnoJxhkwKgvJNGSBl0QN0HDQ/viewform?usp=dialog", image: faceImg },
+    { id: 14, name: "Nail Art", link: "https://forms.gle/mkScq5gkBTKquDaPA", image: nailImg },
+    { id: 15, name: "Ramcharitmanas antakshari ", link: "https://docs.google.com/forms/d/e/1FAIpQLSdbTxJEouTDO5TLHPJclfvtl7rSnzpaEnEbEdXrEJAHXFMsng/viewform?usp=sharing&ouid=114820572430620098558", image: ramayanaImg },
+    { id: 16, name: "Heritage Quiz", link: "https://docs.google.com/forms/d/e/1FAIpQLScWVQKqe1p1cC6VWG3Z26AmwbAfSmLAYSUUjKPHULyMod_h_g/viewform?usp=preview", image: heritageImg },
+    { id: 17, name: "Shankhannd", link: "https://docs.google.com/forms/d/e/1FAIpQLSfJsJ4Tly5FfVjVWeN1Kb3MOAhBpd4oRGilKQ7Zlhhy9ZKvFA/viewform?usp=dialog", image: shankhImg },
+    { id: 18, name: "Mimicry", link: "https://forms.gle/o239C5n9HaZyDGMX9", image: laughterImg },
+    { id: 19, name: "Pyramid", link: "https://docs.google.com/forms/d/e/1FAIpQLSdfHLzFvLHte3oBSyVFdqSyytdHf_wqj8GEVhKKFtOvQtjUUA/viewform", image: pyramidImg },
+    { id: 20, name: "Filmistan", link: "https://forms.gle/XVHo1xXsyzGcmwCC7", image: filmistanImg },
+    { id: 21, name: "Battle of bands", link: "https://docs.google.com/forms/d/1PtKAdCUtTn-eEHVceNowANPWW6SyCXRDeUFNhVvNmS0/edit", image: battleofbandImg }
   ];
 
   return (

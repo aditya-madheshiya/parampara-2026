@@ -53,22 +53,20 @@ const SportsEvents = () => {
   };
 
   const sportsData = [
-    { id: 1, name: "KHO-KHO", image: khoKhoImg, internal: "LINK", external: "LINK" },
-    { id: 2, name: "KABBADDI", image: kabaddiImg, internal: "LINK", external: "LINK" },
-    { id: 3, name: "FOOTBALL", image: footballImg, internal: "LINK", external: "LINK" },
-    { id: 4, name: "TABLE TENNIS", image: tableTennisImg, internal: "LINK", external: "LINK" },
-    { id: 5, name: "BASKETBALL", image: basketballImg, internal: "LINK", external: "LINK" },
-    { id: 6, name: "VOLLEY BALL", image: volleyballImg, internal: "LINK", external: "LINK" },
-    { id: 7, name: "BADMINTON", image: badmintonImg, internal: "LINK", external: "LINK" },
-    { id: 8, name: "CHESS", image: chessImg, internal: "LINK", external: "LINK" },
-    { id: 9, name: "LONG JUMP", image: longJumpImg, internal: "LINK", external: "LINK" },
-    { id: 10, name: "HIGH JUMP", image: highJumpImg, internal: "LINK", external: "LINK" },
-    { id: 11, name: "DISCUSS THROW", image: discussImg, internal: "LINK", external: "LINK" },
-    { id: 12, name: "SHOTPUT", image: shotputImg, internal: "LINK", external: "LINK" },
-    { id: 13, name: "100 METRE RACE", image: raceImg, internal: "LINK", external: "LINK" },
-    { id: 14, name: "CARROM", image: carromImg, internal: "LINK", external: "LINK" },
-    { id: 15, name: "TUG OF WAR", image: tugOfWarImg, internal: "LINK", external: "LINK" },
-    { id: 16, name: "ARM WRESTLING", image: armWrestlingImg, internal: "LINK", external: "LINK" }
+    { id: 1, name: "KHO-KHO", image: khoKhoImg, internal: "LINK", external: "https://docs.google.com/forms/d/e/1FAIpQLSfvbsM3Uwxi_Q5bR9mgLSgpcvUb3JzP6u0k3-7yKIOlAVeVfA/viewform" },
+    { id: 2, name: "KABBADDI", image: kabaddiImg, internal: "LINK", external: "https://docs.google.com/forms/d/e/1FAIpQLSfI20fQwnQ6ABbu5Fj2VB2POTQuAj3GpYGA_jB6DYvRyR7UwQ/viewform" },
+    { id: 3, name: "FOOTBALL", image: footballImg, internal: "LINK", external: "https://docs.google.com/forms/d/e/1FAIpQLScbkyU_bZx9ovbMutV-LqFtX_83allxgGod3G9qHUiHwY_elw/viewform" },
+    { id: 4, name: "TABLE TENNIS", image: tableTennisImg, internal: "LINK", external: "https://docs.google.com/forms/d/e/1FAIpQLSfyu89OzUs3g0xloY6nl01X8qQY7OoW4rYuoFwCpjVZNUIHIg/viewform" },
+    { id: 5, name: "BASKETBALL", image: basketballImg, internal: "LINK", external: "https://docs.google.com/forms/d/e/1FAIpQLSdInnG-M-2l1buK-ITVW5wsaX0lcFUjNmj3cwpkcsx5FYDbtQ/viewform" },
+    { id: 6, name: "VOLLEY BALL", image: volleyballImg, internal: "LINK", external: "https://docs.google.com/forms/d/e/1FAIpQLSdXLmGPhzBy1NFnp0Qp-4YCLV_CmaE8Iecs8oDdfazTuxxluw/viewform" },
+    { id: 7, name: "BADMINTON", image: badmintonImg, internal: "LINK", external: "https://docs.google.com/forms/d/e/1FAIpQLSeFxxZYpSmGhUIlm6tDrg3P3jv1Yq_Lf_v-lQLzoQ-uwmctUg/viewform" },
+    { id: 8, name: "CHESS", image: chessImg, internal: "LINK", external: "https://docs.google.com/forms/d/e/1FAIpQLSew8284gU8xzCmQnIfTWEuXe0o5D1kBz_gJyQwqneMbV5nosw/viewform" },
+    { id: 9, name: "LONG JUMP", image: longJumpImg, internal: "LINK", external: "https://docs.google.com/forms/d/e/1FAIpQLSdxcTBtKRFkhhyKPQNR-6cAhcy1syUKnhgA_Gj2S6qux4n0kw/viewform" },
+    { id: 10, name: "HIGH JUMP", image: highJumpImg, internal: "LINK", external: "https://docs.google.com/forms/d/e/1FAIpQLSeSOhOIr2Do6Ts9_BPe_Pl9mRapJsIXTTEISo1a6LuVquF1BA/viewform" },
+    { id: 11, name: "DISCUSS THROW", image: discussImg, internal: "LINK", external: "https://docs.google.com/forms/d/e/1FAIpQLSfnMJkiXA30STiHiMftA-BUF3SOwuld36-uX6Vq-DCsf061Mw/viewform" },
+    { id: 12, name: "SHOTPUT", image: shotputImg, internal: "LINK", external: "https://docs.google.com/forms/d/e/1FAIpQLSeFHqGYOWc__1lLvUe8rTVNdTTmD_zNGsqDsJD8OBCVe0TK0Q/viewform" },
+    { id: 13, name: "100 METRE RACE", image: raceImg, internal: "LINK", external: "https://docs.google.com/forms/d/e/1FAIpQLScZCbLKcBebUzqoQyOA1o9ETAYz9brB7WB-gCo2pnTx9FkG6g/viewform" },
+    { id: 14, name: "CARROM", image: carromImg, internal: "LINK", external: "https://docs.google.com/forms/d/e/1FAIpQLSdRR0YMRMxH2kwrV8KRW6EdBWzeDDWajLoJe5Do1VtW9YJ8uQ/viewform" }
   ];
 
   return (
