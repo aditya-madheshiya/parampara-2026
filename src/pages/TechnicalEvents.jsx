@@ -52,8 +52,8 @@ const TechnicalEvents = () => {
     { id: 15, name: "Prescription Decoding", link: "https://forms.gle/HW4Xw5N6aVjx8dx76", image: prescriptionImg },
     { id: 16, name: "Lens Master", link: "https://docs.google.com/forms/d/e/1FAIpQLSc3Sjh5W5j4qeWCGEt2VnUjMWT1q4OX5KI6qnuPlkrnSFOp-A/viewform?usp=publish-editor", image: lensMasterImg },
     { id: 17, name: "Circuit Design", link: "https://forms.gle/NdocAXotejUiP6T49", image: circuitImg },
-    { id: 18, name: "Science Exhibition (SR)", link: "https://forms.gle/EUDCV9PUx59VFM587", image: scienceSrImg },
-    { id: 19, name: "Science Exhibition (JR)", link: "https://forms.gle/CD68LKDn7fHgSbNR8", image: scienceJrImg },
+    { id: 18, name: "Science Exhibition (SR)", link: "https://forms.gle/CD68LKDn7fHgSbNR8", image: scienceSrImg },
+    { id: 19, name: "Science Exhibition (JR)", link: "https://forms.gle/EUDCV9PUx59VFM587", image: scienceJrImg },
     { id: 20, name: "Blind Typing", link: "https://forms.gle/2pQYqKZKY4nHxcEL7 ", image: blindTypingImg },
     { id: 22, name: "Futuristic Fiction", link: "https://docs.google.com/forms/d/e/1FAIpQLSclFFA1FNtYn5ZBF2SFWxjc6ot_SNTaMcEcwQfKVpKq_w88MQ/viewform?usp=publish-editor", image: fictionImg }
   ];
