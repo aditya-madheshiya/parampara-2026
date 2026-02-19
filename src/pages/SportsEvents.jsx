@@ -54,7 +54,7 @@ const SportsEvents = () => {
 
   const sportsData = [
     { id: 1, name: "KHO-KHO", image: khoKhoImg, internal: "https://docs.google.com/forms/d/e/1FAIpQLSdjt421icGQLY91PmNjbc6rCbgDKmb8YJf7l4zJVOSEpgXEuA/viewform?usp=publish-editor", external: "https://docs.google.com/forms/d/e/1FAIpQLSfvbsM3Uwxi_Q5bR9mgLSgpcvUb3JzP6u0k3-7yKIOlAVeVfA/viewform" },
-    { id: 2, name: "KABBADDI", image: kabaddiImg, internal: "https://docs.google.com/forms/d/e/1FAIpQLSdjt421icGQLY91PmNjbc6rCbgDKmb8YJf7l4zJVOSEpgXEuA/viewform?usp=publish-editor", external: "https://docs.google.com/forms/d/e/1FAIpQLSfI20fQwnQ6ABbu5Fj2VB2POTQuAj3GpYGA_jB6DYvRyR7UwQ/viewform" },
+    { id: 2, name: "KABBADDI", image: kabaddiImg, internal: "https://forms.gle/nBQ1iZE9AiYVBmvd8", external: "https://docs.google.com/forms/d/e/1FAIpQLSfI20fQwnQ6ABbu5Fj2VB2POTQuAj3GpYGA_jB6DYvRyR7UwQ/viewform" },
     { id: 3, name: "FOOTBALL", image: footballImg, internal: "https://forms.gle/WcZqC6g6TT52Hnu9A", external: "https://docs.google.com/forms/d/e/1FAIpQLScbkyU_bZx9ovbMutV-LqFtX_83allxgGod3G9qHUiHwY_elw/viewform" },
     { id: 4, name: "TABLE TENNIS", image: tableTennisImg, internal: "https://forms.gle/jsbqRvGsDXBMFx8R8", external: "https://docs.google.com/forms/d/e/1FAIpQLSfyu89OzUs3g0xloY6nl01X8qQY7OoW4rYuoFwCpjVZNUIHIg/viewform" },
     { id: 5, name: "BASKETBALL", image: basketballImg, internal: "https://forms.gle/5NM1AcsKGzwXGasaA", external: "https://docs.google.com/forms/d/e/1FAIpQLSdInnG-M-2l1buK-ITVW5wsaX0lcFUjNmj3cwpkcsx5FYDbtQ/viewform" },
