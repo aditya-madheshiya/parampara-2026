@@ -7,7 +7,8 @@ const Footer = () => {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
   const socialLinks = [
-    { name: "Official", link: "https://www.instagram.com/parampara_2k26_official?igsh=MTBxODAyZ28wMzdkYw==" },
+    { name: "ITM_Official", link: "https://www.instagram.com/itmgkpofficial?igsh=NXg0djRrcHkyZTg0" },
+    { name: "Paramapara_Official", link: "https://www.instagram.com/parampara_2k26_official?igsh=MTBxODAyZ28wMzdkYw==" },
     { name: "Technical", link: "https://www.instagram.com/parampara_2k26_technical?igsh=ajZud3I1bzlsc3Uw" },
     { name: "Sports", link: "https://www.instagram.com/parampara_2k26_sports?igsh=cnd4NHUzb2wxeDdw" },
     { name: "Cultural", link: "https://www.instagram.com/parampara_2k26_cultural?utm_source=qr&igsh=d2xxNTFwaG16bmlh" }

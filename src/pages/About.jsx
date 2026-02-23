@@ -37,8 +37,8 @@ const About = () => {
           <h1 className="text-4xl md:text-6xl font-black text-[#2D46B9] uppercase mb-4 tracking-tighter">About Parampara 2026</h1>
           <h2 className="text-xl md:text-3xl font-bold text-gray-800 mb-10 italic">Celebrating 26 Glorious Years! 🥳</h2>
           <div className="space-y-6 text-gray-600 text-lg md:text-xl font-medium leading-relaxed">
-            <p>🌟 Parampara 2026 marks the 26th anniversary of our grand celebration.</p>
-            <p>🎭 This edition promises to be more spectacular than ever before.</p>
+            <p>🌟 Parampara 2026 marks the 26th anniversary of our grand celebration of tradition, culture, and innovation. Over the years, it has become a symbol of artistic expression, cultural heritage, and modern creativity.</p>
+            <p>🎭 With thrilling competitions, engaging workshops, and mesmerizing performances, this milestone edition promises to be more spectacular than ever before. Whether you are here to perform, learn, or simply enjoy the festivities, this is the place to be!</p>
           </div>
           <div className="mt-12 bg-[#F2B100] text-black px-10 py-4 rounded-2xl font-black inline-block shadow-lg hover:scale-105 transition-all">
              Join the Legacy! ✨
