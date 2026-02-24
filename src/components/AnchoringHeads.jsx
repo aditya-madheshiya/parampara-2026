@@ -12,13 +12,13 @@ const AnchoringHeads = () => {
       img: anweshaImg,
       whatsapp: "916393639771" // Anwesha ji ka number
     },
-    {
-      id: 2,
-      name: "ADITI UPADHYAY",
-      role: "Anchoring Head",
-      img: aditiImg,
-      whatsapp: "916387370800" // Aditi ji ka number
-    }
+    // {
+    //   id: 2,
+    //   name: "ADITI UPADHYAY",
+    //   role: "Anchoring Head",
+    //   img: aditiImg,
+    //   whatsapp: "916387370800" // Aditi ji ka number
+    // }
   ];
 
   return (
@@ -31,7 +31,7 @@ const AnchoringHeads = () => {
       </div>
 
       {/* Grid: Mobile 1, Desktop 2 */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl">
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-8 w-full max-w-[340px]">
         {heads.map((head) => (
           <div 
             key={head.id}
